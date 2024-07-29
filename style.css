@@ -1,0 +1,178 @@
+* {
+  font-family: "Epilogue", sans-serif;
+  font-size: 1.3rem;
+}
+
+.logo {
+  font-size: 1.3rem;
+}
+
+li {
+  list-style: none;
+}
+
+nav,
+.cta-btns,
+.menu-items {
+  display: flex;
+  align-items: center;
+}
+
+nav {
+  margin: 0 1.5rem 1.5rem 1.5rem;
+  justify-content: space-between;
+}
+
+.logos-section {
+  display: flex;
+}
+
+.menu-items li,
+.cta-btns li {
+  font-size: 0.7rem;
+  margin-right: 1rem;
+  color: hsl(0, 0%, 41%);
+}
+
+/* Client Logos */
+  
+.clients-logos img {
+  width: 5rem;
+  padding: 10px;
+}
+
+.clients-logos {
+  display: grid;
+  grid-template-columns: repeat(5, 20%);
+}
+
+/* Main */
+main {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  height: 70vh;
+  align-items: center;
+  justify-content: center;
+  margin-left: 8rem;
+}
+/* Images */
+.desktop-img {
+  display: block;
+}
+.mobile-img {
+  display: none;
+}
+
+main h1 {
+  font-size: 3rem;
+}
+
+main p {
+  font-size: 0.7rem;
+  width: 18rem;
+  color: hsl(0, 0%, 41%);
+  line-height: 0.9rem;
+}
+
+main button {
+  background-color: hsl(0, 0%, 8%);
+  color: #fff;
+  border: none;
+  font-size: 0.7rem;
+  padding: 0.6rem 1rem;
+  border-radius: 0.4rem;
+  margin-top: 1rem;
+}
+
+#text-side {
+  margin-top: 3rem;
+}
+/* Hero Image */
+#img-side img {
+  width: 20rem;
+}
+
+.attribution {
+  font-size: 0.7rem;
+  text-align: center;
+  margin-top: 5.5rem;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+  font-size: 0.7rem;
+}
+
+/* Responsive */
+@media (min-width: 300px) and (max-width: 480px) {
+  * {
+    font-size: 1rem;
+  }
+
+  body {
+    height: 100vh;
+    width: 100vw;
+    overflow-y: hidden;
+    overflow-x: hidden;
+  }
+
+  nav {
+    margin: 0 1.5rem 0 1.5rem;
+  }
+
+  nav ul {
+    display: none;
+  }
+  
+  main {
+    display: grid;
+    grid-template-columns: 100%;
+    margin: -3rem auto 0 auto;
+  }
+
+  /* Clients logos */
+  .clients-logos {
+    margin-top: 2rem;
+  }
+  
+  .clients-logos img {
+  width: 30rem;
+}
+
+.clients-logos {
+  margin-top: 1rem;
+  display: flex;
+}
+
+
+  /* Images */
+  .desktop-img {
+    display: none;
+  }
+  .mobile-img {
+    display: block;
+    margin-top: 3rem;
+  }
+
+  .cta-btns,
+  .menu-items {
+    display: none;
+  }
+
+  main h1 {
+    font-size: 2.5rem;
+  }
+
+  /* Client Logos */
+  .clients-logos img {
+    width: 4.5rem;
+    margin-right: 0.8rem;
+  }
+
+  .attribution {
+    width: 13rem;
+    margin: 10rem auto 0 auto;
+    text-align: center;
+  }
+}
+ 
